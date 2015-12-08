@@ -7,14 +7,14 @@ Rails.application.routes.draw do
   
   #pages
   root 'pages#home'
-  get '/about' => 'pages#about'
+  get '/about', to: 'pages#about'
   
   #article
   resources :articles
   
-  #signup
-  get '/signup' => 'users#new'
-  post '/users' => 'users#create'
+  #users
+  get '/signup', to: 'users#new'
+  resources :users, except: [:new]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
