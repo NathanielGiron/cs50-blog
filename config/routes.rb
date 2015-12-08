@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   
   #article
   resources :articles
+  
+  #signup
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
