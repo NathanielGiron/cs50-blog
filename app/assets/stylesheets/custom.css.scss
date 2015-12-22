@@ -18,13 +18,23 @@
     height: 550px;
 }
 
-.jumbotron h1 {
-    color:#fff;
-    margin-bottom:30px;
+.jumbotron-content {
+    margin-top:100px;
 }
 
-.jumbotron p {
+.title {
     color:#fff;
+    font-size:50pt;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.66)
+}
+
+.desc {
+    color:#fff;
+    font-weight:200;
+    font-size: 20pt;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.66)
 }
 
 .article-meta-details {
